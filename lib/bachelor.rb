@@ -1,9 +1,18 @@
 require 'pry'
+<<<<<<< HEAD
 
 def get_first_name_of_season_winner(data, season)
   data[season].each do |i_of_array|
     if i_of_array["status"] == "Winner"
       return i_of_array["name"].split(" ")[0]
+=======
+def get_first_name_of_season_winner(data, season)
+  data.each do |season_n, s_data|
+    if season_n == season
+      s_data[:"name"]
+        
+        binding.pry
+>>>>>>> a911434e3f08378900d0aed1ce2fd0ba4a3cdb38
     end
   end
 end
